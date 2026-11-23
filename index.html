@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batiste Dubo — Développeur Full Stack | Parcours &amp; Portfolio</title>
+  <meta name="description" content="Portfolio de Batiste Dubo, développeur Full Stack. Découvrez mon parcours de la Licence Informatique au BUT Développement d'Application, mes compétences et mes projets web et logiciels.">
+  <meta name="author" content="Batiste Dubo">
+  <meta property="og:title" content="Batiste Dubo — Développeur Full Stack">
+  <meta property="og:description" content="Parcours, compétences techniques et projets phares de Batiste Dubo, développeur Full Stack.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://batiste-dubo.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link" data-i18n="skip">Aller au contenu principal</a>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand" aria-label="Accueil Batiste Dubo">
+        <span class="brand-accent">&gt;_</span> batiste.dubo
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
+        <a href="#parcours" class="nav-link" data-i18n="nav_journey">Parcours</a>
+        <a href="#competences" class="nav-link" data-i18n="nav_skills">Compétences</a>
+        <a href="#projets" class="nav-link" data-i18n="nav_projects">Projets</a>
+        <a href="#apropos" class="nav-link" data-i18n="nav_about">À propos</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="header-controls">
+        <button type="button" class="icon-btn" id="lang-toggle" aria-label="Changer de langue">EN</button>
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Changer de thème">☀</button>
+        <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Ouvrir le menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-meta">
+            <span>Hauts-de-France · Lens / Lille</span>
+            <span>/</span>
+            <span data-i18n="hero_role_tag">Développeur Full Stack</span>
+          </div>
+
+          <h1 class="hero-title" data-i18n="hero_title">
+            Concevoir des applications web complètes, de la base de données à l'interface.
+          </h1>
+
+          <p class="hero-lead" data-i18n="hero_lead">
+            Je m'appelle <strong>Batiste Dubo</strong>. Formé en informatique fondamentale puis spécialisé en développement d'applications à l'IUT de Lens, je construis des solutions robustes, lisibles et centrées sur l'usage.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#parcours" class="btn btn-primary" data-i18n="hero_cta_journey">Découvrir mon parcours</a>
+            <a href="#projets" class="btn btn-secondary" data-i18n="hero_cta_projects">Voir mes projets</a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <div class="stat-value">4+ ans</div>
+              <div class="stat-label" data-i18n="stat_study">Formation en informatique</div>
+            </div>
+            <div>
+              <div class="stat-value">Full Stack</div>
+              <div class="stat-label" data-i18n="stat_focus">PHP/Laravel, Java, SQL, JS</div>
+            </div>
+            <div>
+              <div class="stat-value">48h</div>
+              <div class="stat-label" data-i18n="stat_marathon">Sprints &amp; Marathon Web</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="profile-card reveal" aria-label="Fiche technique développeur">
+          <div class="profile-card-header">
+            <div class="profile-identity">
+              <div class="profile-avatar" aria-hidden="true">BD</div>
+              <div>
+                <div class="profile-name">Batiste Dubo</div>
+                <div class="profile-role" data-i18n="card_role">Développeur Full Stack</div>
+              </div>
+            </div>
+            <span class="timeline-badge" data-i18n="card_status">Ouvert aux opportunités</span>
+          </div>
+
+          <pre class="profile-code"><code><span class="code-comment">// parcours.config.ts</span>
+<span class="code-key">const</span> developer = {
+  name: <span class="code-str">"Batiste Dubo"</span>,
+  education: [
+    <span class="code-str">"BUT Informatique — IUT Lens"</span>,
+    <span class="code-str">"Licence Info — Sorbonne Paris Nord"</span>
+  ],
+  stack: {
+    front: [<span class="code-str">"HTML5"</span>, <span class="code-str">"CSS3"</span>, <span class="code-str">"JavaScript"</span>],
+    back:  [<span class="code-str">"PHP / Laravel"</span>, <span class="code-str">"Java"</span>, <span class="code-str">"C"</span>],
+    data:  [<span class="code-str">"PostgreSQL"</span>, <span class="code-str">"MySQL"</span>]
+  },
+  languages: [<span class="code-str">"FR"</span>, <span class="code-str">"EN (B2+)"</span>]
+};</code></pre>
+
+          <div class="profile-links">
+            <a href="https://github.com/Batiste0912" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/batiste-dubo/" target="_blank" rel="noopener noreferrer" class="social-pill">LinkedIn ↗</a>
+            <a href="mailto:batiste.dubo@outlook.fr" class="social-pill">Email ↗</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Parcours / Journey Section -->
+    <section class="section" id="parcours">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="journey_eyebrow">01 · Mon Parcours</span>
+          <h2 class="section-title" data-i18n="journey_title">Une progression de la théorie informatique au Full Stack</h2>
+          <p class="section-subtitle" data-i18n="journey_subtitle">
+            Chaque étape de mon parcours m'a permis d'associer rigueur algorithmique, pratique du génie logiciel et sens du travail en équipe.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item is-highlight reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-top">
+              <span class="timeline-date">2023 — 2025</span>
+              <span class="timeline-badge" data-i18n="badge_fullstack">Spécialisation Full Stack</span>
+            </div>
+            <h3 class="timeline-title" data-i18n="tl_but_title">BUT Informatique — Parcours Développement d'Application</h3>
+            <p class="timeline-org">Université d'Artois · IUT de Lens</p>
+            <p class="timeline-desc" data-i18n="tl_but_desc">
+              Approfondissement du développement web et logiciel orienté production : architecture MVC avec Laravel, modélisation et requêtage avancé PostgreSQL, programmation orientée objet en Java, et réalisation de projets en équipe dont le Marathon Web (48h).
+            </p>
+            <div class="tag-list">
+              <span class="tag">Laravel / PHP</span>
+              <span class="tag">Java POO</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Git / GitLab</span>
+              <span class="tag">Architecture MVC</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-top">
+              <span class="timeline-date">2022</span>
+              <span class="timeline-badge warm" data-i18n="badge_company">Immersion Entreprise</span>
+            </div>
+            <h3 class="timeline-title" data-i18n="tl_wl_title">Stage de découverte — Métiers du numérique</h3>
+            <p class="timeline-org">WorldLine · Seclin</p>
+            <p class="timeline-desc" data-i18n="tl_wl_desc">
+              Observation concrète du cycle de vie d'un produit logiciel à grande échelle (WorldLine Contact) et échanges avec les équipes de développement, UI/UX design et data science.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Cycle de vie produit</span>
+              <span class="tag">UI/UX</span>
+              <span class="tag">Développement</span>
+              <span class="tag">Data Science</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-top">
+              <span class="timeline-date">2021 — 2023</span>
+              <span class="timeline-badge" data-i18n="badge_fundamentals">Fondamentaux</span>
+            </div>
+            <h3 class="timeline-title" data-i18n="tl_lic_title">Licence d'Informatique</h3>
+            <p class="timeline-org">Université Sorbonne Paris Nord · Villetaneuse</p>
+            <p class="timeline-desc" data-i18n="tl_lic_desc">
+              Acquisition des bases solides de l'informatique : algorithmique, structures de données, programmation impérative en C, logique mathématique et premiers développements web.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Langage C</span>
+              <span class="tag">Algorithmique</span>
+              <span class="tag">Structures de données</span>
+              <span class="tag">HTML / CSS</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-top">
+              <span class="timeline-date">2021 — 2023</span>
+              <span class="timeline-badge warm" data-i18n="badge_soft">Expérience Humaine</span>
+            </div>
+            <h3 class="timeline-title" data-i18n="tl_alsh_title">Animateur en ALSH</h3>
+            <p class="timeline-org">Mairie de Bully-les-Mines</p>
+            <p class="timeline-desc" data-i18n="tl_alsh_desc">
+              Encadrement et animation d'un groupe de 24 enfants (6-7 ans). Développement de compétences transverses essentielles en entreprise : communication claire, calme sous pression, organisation et esprit d'équipe.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Leadership</span>
+              <span class="tag">Communication</span>
+              <span class="tag">Gestion de groupe</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-top">
+              <span class="timeline-date">2018 — 2021</span>
+              <span class="timeline-badge" data-i18n="badge_bac">Socle Scientifique</span>
+            </div>
+            <h3 class="timeline-title" data-i18n="tl_bac_title">Baccalauréat Général — Maths &amp; Physique-Chimie</h3>
+            <p class="timeline-org">Lycée · Pas-de-Calais</p>
+            <p class="timeline-desc" data-i18n="tl_bac_desc">
+              Formation scientifique axée sur la rigueur analytique, la modélisation et la résolution structurée de problèmes.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences Section -->
+    <section class="section" id="competences">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="skills_eyebrow">02 · Stack Technique</span>
+          <h2 class="section-title" data-i18n="skills_title">Des outils choisis pour construire de bout en bout</h2>
+          <p class="section-subtitle" data-i18n="skills_subtitle">
+            Filtrez par couche applicative pour explorer les technologies que j'utilise dans mes projets.
+          </p>
+        </div>
+
+        <div class="filter-tabs" role="tablist" aria-label="Filtrer les compétences">
+          <button type="button" class="filter-tab active" data-skill-filter="all" data-i18n="filter_all">Toutes</button>
+          <button type="button" class="filter-tab" data-skill-filter="frontend">Frontend</button>
+          <button type="button" class="filter-tab" data-skill-filter="backend">Backend</button>
+          <button type="button" class="filter-tab" data-skill-filter="data" data-i18n="filter_data">BDD &amp; Outils</button>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal" data-skill-cat="frontend">
+            <div class="skill-header">
+              <h3 class="skill-name">HTML5 &amp; CSS3</h3>
+              <span class="skill-layer">Frontend</span>
+            </div>
+            <p class="skill-detail" data-i18n="sk_html">Intégration sémantique, mise en page Flexbox &amp; Grid, design responsive et accessibilité.</p>
+          </div>
+
+          <div class="skill-card reveal" data-skill-cat="frontend">
+            <div class="skill-header">
+              <h3 class="skill-name">JavaScript (ES6+)</h3>
+              <span class="skill-layer">Frontend</span>
+            </div>
+            <p class="skill-detail" data-i18n="sk_js">Manipulation du DOM, gestion d'événements, requêtes asynchrones et interfaces dynamiques.</p>
+          </div>
+
+          <div class="skill-card reveal" data-skill-cat="frontend">
+            <div class="skill-header">
+              <h3 class="skill-name">Blade &amp; Templating</h3>
+              <span class="skill-layer">Frontend</span>
+            </div>
+            <p class="skill-detail" data-i18n="sk_blade">Conception de vues modulaires, composants réutilisables et rendu côté serveur avec Laravel.</p>
+          </div>
+
+          <div class="skill-card reveal" data-skill-cat="backend">
+            <div class="skill-header">
+              <h3 class="skill-name">PHP &amp; Laravel</h3>
+              <span class="skill-layer">Backend</span>
+            </div>
+            <p class="skill-detail" data-i18n="sk_laravel">Architecture MVC, routage, Eloquent ORM, authentification et validation de formulaires.</p>
+          </div>
+
+          <div class="skill-card reveal" data-skill-cat="backend">
+            <div class="skill-header">
+              <h3 class="skill-name">Java (POO)</h3>
+              <span class="skill-layer">Backend</span>
+            </div>
+            <p class="skill-detail" data-i18n="sk_java">Programmation orientée objet, patrons de conception, applications lourdes et calcul graphique.</p>
+          </div>
+
+          <div class="skill-card reveal" data-skill-cat="backend">
+            <div class="skill-header">
+              <h3 class="skill-name">Langage C</h3>
+              <span class="skill-layer">Backend</span>
+            </div>
+            <p class="skill-detail" data-i18n="sk_c">Gestion mémoire, pointeurs, algorithmique et compréhension bas-niveau du système.</p>
+          </div>
+
+          <div class="skill-card reveal" data-skill-cat="data">
+            <div class="skill-header">
+              <h3 class="skill-name">PostgreSQL &amp; SQL</h3>
+              <span class="skill-layer">Data</span>
+            </div>
+            <p class="skill-detail" data-i18n="sk_pg">Modélisation relationnelle (MCD/MLD), requêtes complexes, migrations et intégrité des données.</p>
+          </div>
+
+          <div class="skill-card reveal" data-skill-cat="data">
+            <div class="skill-header">
+              <h3 class="skill-name">Git / GitLab / GitHub</h3>
+              <span class="skill-layer">Outils</span>
+            </div>
+            <p class="skill-detail" data-i18n="sk_git">Gestion de branches, revues de code, résolution de conflits et collaboration en sprint.</p>
+          </div>
+
+          <div class="skill-card reveal" data-skill-cat="data">
+            <div class="skill-header">
+              <h3 class="skill-name">Méthode Agile &amp; Équipe</h3>
+              <span class="skill-layer">Méthodes</span>
+            </div>
+            <p class="skill-detail" data-i18n="sk_team">Travail sous contrainte de temps (Marathon Web 48h), découpage de tâches et communication.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section class="section" id="projets">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="projects_eyebrow">03 · Réalisations</span>
+          <h2 class="section-title" data-i18n="projects_title">Projets phares</h2>
+          <p class="section-subtitle" data-i18n="projects_subtitle">
+            Une sélection d'applications web full stack et de logiciels réalisés durant mon parcours. Cliquez sur un projet pour explorer son architecture.
+          </p>
+        </div>
+
+        <div class="filter-tabs" role="tablist" aria-label="Filtrer les projets">
+          <button type="button" class="filter-tab active" data-project-filter="all" data-i18n="filter_all_projects">Tous</button>
+          <button type="button" class="filter-tab" data-project-filter="fullstack">Full Stack Web</button>
+          <button type="button" class="filter-tab" data-project-filter="software" data-i18n="filter_software">Logiciel &amp; Graphisme</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Le Panthéon -->
+          <article class="project-card reveal" data-project-cat="fullstack" data-project-id="pantheon">
+            <div class="project-thumb" aria-hidden="true">
+              <svg viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="640" height="360" fill="#11161f"/>
+                <rect x="44" y="36" width="552" height="288" rx="14" fill="#171e2b" stroke="rgba(255,255,255,0.09)"/>
+                <rect x="68" y="60" width="140" height="14" rx="4" fill="#2dd4bf" fill-opacity="0.85"/>
+                <rect x="68" y="92" width="300" height="10" rx="4" fill="#9aa5b5" fill-opacity="0.35"/>
+                <rect x="68" y="114" width="250" height="10" rx="4" fill="#9aa5b5" fill-opacity="0.22"/>
+                <rect x="68" y="154" width="160" height="132" rx="10" fill="#11161f" stroke="rgba(45,212,191,0.35)"/>
+                <rect x="246" y="154" width="160" height="132" rx="10" fill="#11161f" stroke="rgba(255,255,255,0.08)"/>
+                <rect x="424" y="154" width="148" height="132" rx="10" fill="#11161f" stroke="rgba(255,255,255,0.08)"/>
+                <circle cx="148" cy="204" r="22" fill="#2dd4bf" fill-opacity="0.18"/>
+                <path d="M138 204L145 211L160 196" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="92" y="244" width="112" height="8" rx="4" fill="#eef2f6" fill-opacity="0.6"/>
+                <rect x="270" y="188" width="112" height="8" rx="4" fill="#eef2f6" fill-opacity="0.45"/>
+                <rect x="270" y="206" width="84" height="8" rx="4" fill="#9aa5b5" fill-opacity="0.3"/>
+                <rect x="448" y="188" width="100" height="8" rx="4" fill="#f59e0b" fill-opacity="0.7"/>
+                <rect x="448" y="206" width="76" height="8" rx="4" fill="#9aa5b5" fill-opacity="0.3"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-type">Full Stack · Marathon Web 48h</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">Le Panthéon</h3>
+              <p class="project-desc" data-i18n="proj_pantheon_desc">
+                Plateforme collaborative de lecture et de création d'histoires interactives à choix multiples, conçue en équipe lors du Marathon Web de l'IUT de Lens.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Laravel</span>
+                <span class="tag">PHP</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Blade</span>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link-btn open-modal-btn" data-project-id="pantheon" data-i18n="view_details">Voir les détails →</button>
+                <a href="https://github.com/Batiste0912/IUT-MarathonWeb" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: BoardGames -->
+          <article class="project-card reveal" data-project-cat="fullstack" data-project-id="boardgames">
+            <div class="project-thumb" aria-hidden="true">
+              <svg viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="640" height="360" fill="#121720"/>
+                <rect x="52" y="42" width="536" height="276" rx="14" fill="#18202d" stroke="rgba(255,255,255,0.09)"/>
+                <rect x="78" y="68" width="200" height="28" rx="6" fill="#0b0e13" stroke="rgba(255,255,255,0.1)"/>
+                <circle cx="96" cy="82" r="5" fill="#f59e0b"/>
+                <rect x="112" y="79" width="120" height="6" rx="3" fill="#9aa5b5" fill-opacity="0.4"/>
+                <rect x="78" y="120" width="232" height="170" rx="10" fill="#11161f" stroke="rgba(245,158,11,0.35)"/>
+                <rect x="330" y="120" width="232" height="78" rx="10" fill="#11161f" stroke="rgba(255,255,255,0.08)"/>
+                <rect x="330" y="212" width="232" height="78" rx="10" fill="#11161f" stroke="rgba(255,255,255,0.08)"/>
+                <rect x="102" y="148" width="44" height="44" rx="8" fill="#f59e0b" fill-opacity="0.2" stroke="#f59e0b"/>
+                <circle cx="116" cy="162" r="3.5" fill="#f59e0b"/>
+                <circle cx="132" cy="178" r="3.5" fill="#f59e0b"/>
+                <rect x="102" y="214" width="156" height="10" rx="4" fill="#eef2f6" fill-opacity="0.7"/>
+                <rect x="102" y="234" width="124" height="8" rx="4" fill="#9aa5b5" fill-opacity="0.35"/>
+                <rect x="352" y="144" width="110" height="8" rx="4" fill="#2dd4bf" fill-opacity="0.75"/>
+                <rect x="352" y="164" width="170" height="8" rx="4" fill="#9aa5b5" fill-opacity="0.3"/>
+                <rect x="352" y="236" width="120" height="8" rx="4" fill="#eef2f6" fill-opacity="0.6"/>
+                <rect x="352" y="256" width="160" height="8" rx="4" fill="#9aa5b5" fill-opacity="0.3"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-type">Full Stack · CRUD &amp; Catalogue</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">BoardGames</h3>
+              <p class="project-desc" data-i18n="proj_boardgames_desc">
+                Application web complète permettant de consulter, filtrer, noter et ajouter des jeux de société avec gestion des utilisateurs et base relationnelle.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Laravel</span>
+                <span class="tag">Eloquent ORM</span>
+                <span class="tag">SQL</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link-btn open-modal-btn" data-project-id="boardgames" data-i18n="view_details">Voir les détails →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Ray-Tracing -->
+          <article class="project-card reveal" data-project-cat="software" data-project-id="raytracing">
+            <div class="project-thumb" aria-hidden="true">
+              <svg viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="sphereGrad1" cx="35%" cy="30%" r="65%">
+                    <stop offset="0%" stop-color="#5eead4"/>
+                    <stop offset="55%" stop-color="#0d9488"/>
+                    <stop offset="100%" stop-color="#072826"/>
+                  </radialGradient>
+                  <radialGradient id="sphereGrad2" cx="35%" cy="30%" r="65%">
+                    <stop offset="0%" stop-color="#fde68a"/>
+                    <stop offset="55%" stop-color="#d97706"/>
+                    <stop offset="100%" stop-color="#291705"/>
+                  </radialGradient>
+                </defs>
+                <rect width="640" height="360" fill="#0b0e13"/>
+                <ellipse cx="320" cy="272" rx="220" ry="34" fill="#18202d"/>
+                <ellipse cx="265" cy="264" rx="74" ry="14" fill="#05070a" fill-opacity="0.7"/>
+                <ellipse cx="404" cy="268" rx="46" ry="10" fill="#05070a" fill-opacity="0.7"/>
+                <circle cx="255" cy="176" r="82" fill="url(#sphereGrad1)"/>
+                <circle cx="398" cy="212" r="48" fill="url(#sphereGrad2)"/>
+                <line x1="90" y1="72" x2="215" y2="146" stroke="#2dd4bf" stroke-opacity="0.5" stroke-dasharray="5 5" stroke-width="1.5"/>
+                <line x1="215" y1="146" x2="354" y2="198" stroke="#f59e0b" stroke-opacity="0.5" stroke-dasharray="5 5" stroke-width="1.5"/>
+                <circle cx="90" cy="72" r="7" fill="#fde68a"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-type">Logiciel · Synthèse d'images</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title" data-i18n="proj_rt_title">Moteur de Ray-Tracing</h3>
+              <p class="project-desc" data-i18n="proj_rt_desc">
+                Logiciel de génération d'images 3D par lancer de rayons développé en Java : calcul d'intersections, gestion des ombres, réflexions et modèles d'éclairage.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Java</span>
+                <span class="tag">POO</span>
+                <span class="tag">Maths 3D</span>
+                <span class="tag">Algorithmique</span>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link-btn open-modal-btn" data-project-id="raytracing" data-i18n="view_details">Voir les détails →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: JO Paris 2024 -->
+          <article class="project-card reveal" data-project-cat="fullstack" data-project-id="joparis">
+            <div class="project-thumb" aria-hidden="true">
+              <svg viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="640" height="360" fill="#10151d"/>
+                <rect x="48" y="40" width="544" height="280" rx="14" fill="#161d29" stroke="rgba(255,255,255,0.09)"/>
+                <circle cx="240" cy="148" r="28" stroke="#2dd4bf" stroke-width="4"/>
+                <circle cx="320" cy="148" r="28" stroke="#eef2f6" stroke-width="4"/>
+                <circle cx="400" cy="148" r="28" stroke="#f59e0b" stroke-width="4"/>
+                <circle cx="280" cy="180" r="28" stroke="#f59e0b" stroke-opacity="0.7" stroke-width="4"/>
+                <circle cx="360" cy="180" r="28" stroke="#2dd4bf" stroke-opacity="0.7" stroke-width="4"/>
+                <rect x="190" y="238" width="260" height="12" rx="6" fill="#eef2f6" fill-opacity="0.7"/>
+                <rect x="235" y="262" width="170" height="8" rx="4" fill="#9aa5b5" fill-opacity="0.35"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-type">Web · Site Vitrine Dynamique</span>
+                <span class="project-year">2023</span>
+              </div>
+              <h3 class="project-title">Jeux Olympiques Paris 2024</h3>
+              <p class="project-desc" data-i18n="proj_jo_desc">
+                Site vitrine dynamique dédié aux Jeux Olympiques de Paris 2024 développé sous Laravel, mettant en avant les épreuves, sites et actualités.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Laravel</span>
+                <span class="tag">HTML5 / CSS3</span>
+                <span class="tag">Responsive</span>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="project-link-btn open-modal-btn" data-project-id="joparis" data-i18n="view_details">Voir les détails →</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- À Propos Section -->
+    <section class="section" id="apropos">
+      <div class="container about-grid">
+        <div class="about-prose reveal">
+          <span class="section-eyebrow" data-i18n="about_eyebrow">04 · À Propos</span>
+          <h2 class="section-title" data-i18n="about_title">Ce qui guide ma façon de développer</h2>
+          <p data-i18n="about_p1">
+            Mon parcours n'est pas linéaire, et c'est ce qui fait ma force : après deux ans de <strong>Licence d'Informatique à Sorbonne Paris Nord</strong> où j'ai forgé mes bases théoriques (C, algorithmique, logique), j'ai choisi le <strong>BUT Informatique à l'IUT de Lens</strong> pour me confronter au terrain et au développement d'applications complètes.
+          </p>
+          <p data-i18n="about_p2">
+            En parallèle, mon expérience d'<strong>animateur en ALSH</strong> et mon passage chez <strong>WorldLine</strong> m'ont appris l'importance de la communication, de la fiabilité et du travail collectif — des qualités indispensables lorsqu'on code en équipe sur des sprints courts comme le Marathon Web.
+          </p>
+        </div>
+
+        <aside class="info-panel reveal">
+          <h3 class="info-panel-title" data-i18n="info_title">Repères &amp; Langues</h3>
+          <div class="info-list">
+            <div class="info-row">
+              <span class="info-label" data-i18n="info_loc_lbl">Localisation</span>
+              <span class="info-value">Bully-les-Mines · Lens / Lille</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label" data-i18n="info_lang_lbl">Langues</span>
+              <span class="info-value" data-i18n="info_lang_val">Français (natif) · Anglais (B2+) · Espagnol (A2)</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label" data-i18n="info_int_lbl">Centres d'intérêt</span>
+              <span class="info-value" data-i18n="info_int_val">Informatique · Basket-Ball · Jeux vidéo</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label" data-i18n="info_focus_lbl">Approche</span>
+              <span class="info-value" data-i18n="info_focus_val">Code propre · MVC · Esprit d'équipe</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="contact_eyebrow">05 · Contact</span>
+          <h2 class="section-title" data-i18n="contact_title">Échangeons sur vos projets ou opportunités</h2>
+          <p class="section-subtitle" data-i18n="contact_subtitle">
+            Disponible pour discuter d'un poste, d'une alternance, d'un projet web ou simplement d'architecture logicielle.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-cards reveal">
+            <div class="contact-card">
+              <div>
+                <div class="contact-card-label">Email</div>
+                <a href="mailto:batiste.dubo@outlook.fr" class="contact-card-value">batiste.dubo@outlook.fr</a>
+              </div>
+              <button type="button" class="btn btn-secondary btn-sm" id="copy-email-btn" data-i18n="copy_btn">Copier</button>
+            </div>
+
+            <a href="https://www.linkedin.com/in/batiste-dubo/" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div>
+                <div class="contact-card-label">LinkedIn</div>
+                <div class="contact-card-value">linkedin.com/in/batiste-dubo</div>
+              </div>
+              <span class="social-pill">Ouvrir ↗</span>
+            </a>
+
+            <a href="https://github.com/Batiste0912" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div>
+                <div class="contact-card-label">GitHub</div>
+                <div class="contact-card-value">github.com/Batiste0912</div>
+              </div>
+              <span class="social-pill">Ouvrir ↗</span>
+            </a>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label" data-i18n="form_name">Votre nom</label>
+              <input type="text" id="contact-name" class="form-input" required placeholder="Camille Martin">
+            </div>
+            <div class="form-group">
+              <label for="contact-subject" class="form-label" data-i18n="form_subject">Sujet</label>
+              <input type="text" id="contact-subject" class="form-input" required placeholder="Opportunité Développeur Full Stack">
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label" data-i18n="form_message">Message</label>
+              <textarea id="contact-message" class="form-textarea" required placeholder="Bonjour Batiste..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="form_submit">Préparer l'email →</button>
+            <div class="form-feedback" id="form-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> Batiste Dubo — <span data-i18n="footer_rights">Développeur Full Stack</span></p>
+      <p data-i18n="footer_built">Conçu en HTML5, CSS3 &amp; JavaScript · Hébergé sur GitHub Pages</p>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="project-type" id="modal-type"></span>
+          <h3 class="section-title" id="modal-title" style="margin-bottom: 0; font-size: 1.6rem;"></h3>
+        </div>
+        <button type="button" class="modal-close" id="modal-close" aria-label="Fermer">×</button>
+      </div>
+      <div class="tag-list" id="modal-tags"></div>
+
+      <div class="modal-section">
+        <h4 data-i18n="modal_context">Contexte</h4>
+        <p id="modal-context"></p>
+      </div>
+      <div class="modal-section">
+        <h4 data-i18n="modal_challenges">Architecture &amp; Défis</h4>
+        <p id="modal-challenges"></p>
+      </div>
+      <div class="modal-actions" id="modal-actions"></div>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
