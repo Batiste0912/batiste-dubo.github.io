@@ -22,11 +22,11 @@
   <!-- Header -->
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a href="#hero" class="brand" aria-label="Accueil Batiste Dubo">
+      <a href="#hero" class="brand" aria-label="Accueil Batiste Dubo" data-i18n-aria="aria_home">
         <span class="brand-accent">&gt;_</span> batiste.dubo
       </a>
 
-      <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
+      <nav class="nav-links" id="nav-links" aria-label="Navigation principale" data-i18n-aria="aria_nav">
         <a href="#parcours" class="nav-link" data-i18n="nav_journey">Parcours</a>
         <a href="#competences" class="nav-link" data-i18n="nav_skills">Compétences</a>
         <a href="#projets" class="nav-link" data-i18n="nav_projects">Projets</a>
@@ -35,7 +35,7 @@
       </nav>
 
       <div class="header-controls">
-        <button type="button" class="icon-btn" id="lang-toggle" aria-label="Changer de langue">EN</button>
+        <button type="button" class="icon-btn" id="lang-toggle" aria-label="Changer de langue" data-i18n-aria="aria_lang">EN</button>
         <button type="button" class="icon-btn" id="theme-toggle" aria-label="Changer de thème">☀</button>
         <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Ouvrir le menu">☰</button>
       </div>
@@ -68,7 +68,7 @@
 
           <div class="hero-stats">
             <div>
-              <div class="stat-value">4+ ans</div>
+              <div class="stat-value" data-i18n="stat_years">4+ ans</div>
               <div class="stat-label" data-i18n="stat_study">Formation en informatique</div>
             </div>
             <div>
@@ -82,7 +82,7 @@
           </div>
         </div>
 
-        <aside class="profile-card reveal" aria-label="Fiche technique développeur">
+        <aside class="profile-card reveal" aria-label="Fiche technique développeur" data-i18n-aria="aria_profile_card">
           <div class="profile-card-header">
             <div class="profile-identity">
               <div class="profile-avatar" aria-hidden="true">BD</div>
@@ -94,12 +94,12 @@
             <span class="timeline-badge" data-i18n="card_status">Ouvert aux opportunités</span>
           </div>
 
-          <pre class="profile-code"><code><span class="code-comment">// parcours.config.ts</span>
+          <pre class="profile-code"><code><span class="code-comment" data-i18n="code_comment">// parcours.config.ts</span>
 <span class="code-key">const</span> developer = {
   name: <span class="code-str">"Batiste Dubo"</span>,
   education: [
-    <span class="code-str">"BUT Informatique — IUT Lens"</span>,
-    <span class="code-str">"Licence Info — Sorbonne Paris Nord"</span>
+    <span class="code-str" data-i18n="code_edu_1">"BUT Informatique — IUT Lens"</span>,
+    <span class="code-str" data-i18n="code_edu_2">"Licence Info — Sorbonne Paris Nord"</span>
   ],
   stack: {
     front: [<span class="code-str">"HTML5"</span>, <span class="code-str">"CSS3"</span>, <span class="code-str">"JavaScript"</span>],
@@ -137,16 +137,16 @@
               <span class="timeline-badge" data-i18n="badge_fullstack">Spécialisation Full Stack</span>
             </div>
             <h3 class="timeline-title" data-i18n="tl_but_title">BUT Informatique — Parcours Développement d'Application</h3>
-            <p class="timeline-org">Université d'Artois · IUT de Lens</p>
+            <p class="timeline-org" data-i18n="tl_but_org">Université d'Artois · IUT de Lens</p>
             <p class="timeline-desc" data-i18n="tl_but_desc">
               Approfondissement du développement web et logiciel orienté production : architecture MVC avec Laravel, modélisation et requêtage avancé PostgreSQL, programmation orientée objet en Java, et réalisation de projets en équipe dont le Marathon Web (48h).
             </p>
             <div class="tag-list">
               <span class="tag">Laravel / PHP</span>
-              <span class="tag">Java POO</span>
+              <span class="tag" data-i18n="tag_java_oop">Java POO</span>
               <span class="tag">PostgreSQL</span>
               <span class="tag">Git / GitLab</span>
-              <span class="tag">Architecture MVC</span>
+              <span class="tag" data-i18n="tag_mvc">Architecture MVC</span>
             </div>
           </article>
 
@@ -162,9 +162,9 @@
               Observation concrète du cycle de vie d'un produit logiciel à grande échelle (WorldLine Contact) et échanges avec les équipes de développement, UI/UX design et data science.
             </p>
             <div class="tag-list">
-              <span class="tag">Cycle de vie produit</span>
+              <span class="tag" data-i18n="tag_lifecycle">Cycle de vie produit</span>
               <span class="tag">UI/UX</span>
-              <span class="tag">Développement</span>
+              <span class="tag" data-i18n="tag_dev">Développement</span>
               <span class="tag">Data Science</span>
             </div>
           </article>
@@ -176,14 +176,14 @@
               <span class="timeline-badge" data-i18n="badge_fundamentals">Fondamentaux</span>
             </div>
             <h3 class="timeline-title" data-i18n="tl_lic_title">Licence d'Informatique</h3>
-            <p class="timeline-org">Université Sorbonne Paris Nord · Villetaneuse</p>
+            <p class="timeline-org" data-i18n="tl_lic_org">Université Sorbonne Paris Nord · Villetaneuse</p>
             <p class="timeline-desc" data-i18n="tl_lic_desc">
               Acquisition des bases solides de l'informatique : algorithmique, structures de données, programmation impérative en C, logique mathématique et premiers développements web.
             </p>
             <div class="tag-list">
-              <span class="tag">Langage C</span>
-              <span class="tag">Algorithmique</span>
-              <span class="tag">Structures de données</span>
+              <span class="tag" data-i18n="tag_c">Langage C</span>
+              <span class="tag" data-i18n="tag_algo">Algorithmique</span>
+              <span class="tag" data-i18n="tag_ds">Structures de données</span>
               <span class="tag">HTML / CSS</span>
             </div>
           </article>
@@ -195,14 +195,14 @@
               <span class="timeline-badge warm" data-i18n="badge_soft">Expérience Humaine</span>
             </div>
             <h3 class="timeline-title" data-i18n="tl_alsh_title">Animateur en ALSH</h3>
-            <p class="timeline-org">Mairie de Bully-les-Mines</p>
+            <p class="timeline-org" data-i18n="tl_alsh_org">Mairie de Bully-les-Mines</p>
             <p class="timeline-desc" data-i18n="tl_alsh_desc">
               Encadrement et animation d'un groupe de 24 enfants (6-7 ans). Développement de compétences transverses essentielles en entreprise : communication claire, calme sous pression, organisation et esprit d'équipe.
             </p>
             <div class="tag-list">
               <span class="tag">Leadership</span>
               <span class="tag">Communication</span>
-              <span class="tag">Gestion de groupe</span>
+              <span class="tag" data-i18n="tag_group">Gestion de groupe</span>
             </div>
           </article>
 
@@ -213,7 +213,7 @@
               <span class="timeline-badge" data-i18n="badge_bac">Socle Scientifique</span>
             </div>
             <h3 class="timeline-title" data-i18n="tl_bac_title">Baccalauréat Général — Maths &amp; Physique-Chimie</h3>
-            <p class="timeline-org">Lycée · Pas-de-Calais</p>
+            <p class="timeline-org" data-i18n="tl_bac_org">Lycée · Pas-de-Calais</p>
             <p class="timeline-desc" data-i18n="tl_bac_desc">
               Formation scientifique axée sur la rigueur analytique, la modélisation et la résolution structurée de problèmes.
             </p>
@@ -233,7 +233,7 @@
           </p>
         </div>
 
-        <div class="filter-tabs" role="tablist" aria-label="Filtrer les compétences">
+        <div class="filter-tabs" role="tablist" aria-label="Filtrer les compétences" data-i18n-aria="aria_filter_skills">
           <button type="button" class="filter-tab active" data-skill-filter="all" data-i18n="filter_all">Toutes</button>
           <button type="button" class="filter-tab" data-skill-filter="frontend">Frontend</button>
           <button type="button" class="filter-tab" data-skill-filter="backend">Backend</button>
@@ -275,7 +275,7 @@
 
           <div class="skill-card reveal" data-skill-cat="backend">
             <div class="skill-header">
-              <h3 class="skill-name">Java (POO)</h3>
+              <h3 class="skill-name" data-i18n="sk_java_name">Java (POO)</h3>
               <span class="skill-layer">Backend</span>
             </div>
             <p class="skill-detail" data-i18n="sk_java">Programmation orientée objet, patrons de conception, applications lourdes et calcul graphique.</p>
@@ -283,7 +283,7 @@
 
           <div class="skill-card reveal" data-skill-cat="backend">
             <div class="skill-header">
-              <h3 class="skill-name">Langage C</h3>
+              <h3 class="skill-name" data-i18n="sk_c_name">Langage C</h3>
               <span class="skill-layer">Backend</span>
             </div>
             <p class="skill-detail" data-i18n="sk_c">Gestion mémoire, pointeurs, algorithmique et compréhension bas-niveau du système.</p>
@@ -300,15 +300,15 @@
           <div class="skill-card reveal" data-skill-cat="data">
             <div class="skill-header">
               <h3 class="skill-name">Git / GitLab / GitHub</h3>
-              <span class="skill-layer">Outils</span>
+              <span class="skill-layer" data-i18n="layer_tools">Outils</span>
             </div>
             <p class="skill-detail" data-i18n="sk_git">Gestion de branches, revues de code, résolution de conflits et collaboration en sprint.</p>
           </div>
 
           <div class="skill-card reveal" data-skill-cat="data">
             <div class="skill-header">
-              <h3 class="skill-name">Méthode Agile &amp; Équipe</h3>
-              <span class="skill-layer">Méthodes</span>
+              <h3 class="skill-name" data-i18n="sk_team_name">Méthode Agile &amp; Équipe</h3>
+              <span class="skill-layer" data-i18n="layer_methods">Méthodes</span>
             </div>
             <p class="skill-detail" data-i18n="sk_team">Travail sous contrainte de temps (Marathon Web 48h), découpage de tâches et communication.</p>
           </div>
@@ -327,7 +327,7 @@
           </p>
         </div>
 
-        <div class="filter-tabs" role="tablist" aria-label="Filtrer les projets">
+        <div class="filter-tabs" role="tablist" aria-label="Filtrer les projets" data-i18n-aria="aria_filter_projects">
           <button type="button" class="filter-tab active" data-project-filter="all" data-i18n="filter_all_projects">Tous</button>
           <button type="button" class="filter-tab" data-project-filter="fullstack">Full Stack Web</button>
           <button type="button" class="filter-tab" data-project-filter="software" data-i18n="filter_software">Logiciel &amp; Graphisme</button>
@@ -357,7 +357,7 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <span class="project-type">Full Stack · Marathon Web 48h</span>
+                <span class="project-type" data-i18n="proj_pantheon_type">Full Stack · Marathon Web 48h</span>
                 <span class="project-year">2024</span>
               </div>
               <h3 class="project-title">Le Panthéon</h3>
@@ -402,7 +402,7 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <span class="project-type">Full Stack · CRUD &amp; Catalogue</span>
+                <span class="project-type" data-i18n="proj_boardgames_type">Full Stack · CRUD &amp; Catalogue</span>
                 <span class="project-year">2024</span>
               </div>
               <h3 class="project-title">BoardGames</h3>
@@ -450,7 +450,7 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <span class="project-type">Logiciel · Synthèse d'images</span>
+                <span class="project-type" data-i18n="proj_rt_type">Logiciel · Synthèse d'images</span>
                 <span class="project-year">2024</span>
               </div>
               <h3 class="project-title" data-i18n="proj_rt_title">Moteur de Ray-Tracing</h3>
@@ -459,9 +459,9 @@
               </p>
               <div class="tag-list">
                 <span class="tag">Java</span>
-                <span class="tag">POO</span>
-                <span class="tag">Maths 3D</span>
-                <span class="tag">Algorithmique</span>
+                <span class="tag" data-i18n="tag_oop">POO</span>
+                <span class="tag" data-i18n="tag_3dmath">Maths 3D</span>
+                <span class="tag" data-i18n="tag_algo">Algorithmique</span>
               </div>
               <div class="project-footer">
                 <button type="button" class="project-link-btn open-modal-btn" data-project-id="raytracing" data-i18n="view_details">Voir les détails →</button>
@@ -486,10 +486,10 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <span class="project-type">Web · Site Vitrine Dynamique</span>
+                <span class="project-type" data-i18n="proj_jo_type">Web · Site Vitrine Dynamique</span>
                 <span class="project-year">2023</span>
               </div>
-              <h3 class="project-title">Jeux Olympiques Paris 2024</h3>
+              <h3 class="project-title" data-i18n="proj_jo_title">Jeux Olympiques Paris 2024</h3>
               <p class="project-desc" data-i18n="proj_jo_desc">
                 Site vitrine dynamique dédié aux Jeux Olympiques de Paris 2024 développé sous Laravel, mettant en avant les épreuves, sites et actualités.
               </p>
@@ -571,7 +571,7 @@
                 <div class="contact-card-label">LinkedIn</div>
                 <div class="contact-card-value">linkedin.com/in/batiste-dubo</div>
               </div>
-              <span class="social-pill">Ouvrir ↗</span>
+              <span class="social-pill" data-i18n="open_link">Ouvrir ↗</span>
             </a>
 
             <a href="https://github.com/Batiste0912" target="_blank" rel="noopener noreferrer" class="contact-card">
@@ -579,22 +579,22 @@
                 <div class="contact-card-label">GitHub</div>
                 <div class="contact-card-value">github.com/Batiste0912</div>
               </div>
-              <span class="social-pill">Ouvrir ↗</span>
+              <span class="social-pill" data-i18n="open_link">Ouvrir ↗</span>
             </a>
           </div>
 
           <form class="contact-form reveal" id="contact-form">
             <div class="form-group">
               <label for="contact-name" class="form-label" data-i18n="form_name">Votre nom</label>
-              <input type="text" id="contact-name" class="form-input" required placeholder="Camille Martin">
+              <input type="text" id="contact-name" class="form-input" required placeholder="Camille Martin" data-i18n-placeholder="ph_name">
             </div>
             <div class="form-group">
               <label for="contact-subject" class="form-label" data-i18n="form_subject">Sujet</label>
-              <input type="text" id="contact-subject" class="form-input" required placeholder="Opportunité Développeur Full Stack">
+              <input type="text" id="contact-subject" class="form-input" required placeholder="Opportunité Développeur Full Stack" data-i18n-placeholder="ph_subject">
             </div>
             <div class="form-group">
               <label for="contact-message" class="form-label" data-i18n="form_message">Message</label>
-              <textarea id="contact-message" class="form-textarea" required placeholder="Bonjour Batiste..."></textarea>
+              <textarea id="contact-message" class="form-textarea" required placeholder="Bonjour Batiste..." data-i18n-placeholder="ph_message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary" data-i18n="form_submit">Préparer l'email →</button>
             <div class="form-feedback" id="form-feedback" role="status" aria-live="polite"></div>
@@ -620,7 +620,7 @@
           <span class="project-type" id="modal-type"></span>
           <h3 class="section-title" id="modal-title" style="margin-bottom: 0; font-size: 1.6rem;"></h3>
         </div>
-        <button type="button" class="modal-close" id="modal-close" aria-label="Fermer">×</button>
+        <button type="button" class="modal-close" id="modal-close" aria-label="Fermer" data-i18n-aria="aria_close">×</button>
       </div>
       <div class="tag-list" id="modal-tags"></div>
 

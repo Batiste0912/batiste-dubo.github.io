@@ -11,6 +11,22 @@
   // --------------------------------------------------------------------------
   const translations = {
     fr: {
+      page_title: 'Batiste Dubo — Développeur Full Stack | Parcours & Portfolio',
+      meta_description: 'Portfolio de Batiste Dubo, développeur Full Stack. Découvrez mon parcours de la Licence Informatique au BUT Développement d\'Application, mes compétences et mes projets web et logiciels.',
+      og_title: 'Batiste Dubo — Développeur Full Stack',
+      og_description: 'Parcours, compétences techniques et projets phares de Batiste Dubo, développeur Full Stack.',
+      aria_home: 'Accueil Batiste Dubo',
+      aria_nav: 'Navigation principale',
+      aria_lang: 'Changer de langue',
+      aria_profile_card: 'Fiche technique développeur',
+      aria_filter_skills: 'Filtrer les compétences',
+      aria_filter_projects: 'Filtrer les projets',
+      aria_close: 'Fermer',
+      theme_light_aria: 'Passer en mode clair',
+      theme_dark_aria: 'Passer en mode sombre',
+      menu_open_aria: 'Ouvrir le menu',
+      menu_close_aria: 'Fermer le menu',
+
       skip: 'Aller au contenu principal',
       nav_journey: 'Parcours',
       nav_skills: 'Compétences',
@@ -22,36 +38,60 @@
       hero_lead: 'Je m\'appelle <strong>Batiste Dubo</strong>. Formé en informatique fondamentale puis spécialisé en développement d\'applications à l\'IUT de Lens, je construis des solutions robustes, lisibles et centrées sur l\'usage.',
       hero_cta_journey: 'Découvrir mon parcours',
       hero_cta_projects: 'Voir mes projets',
+      stat_years: '4+ ans',
       stat_study: 'Formation en informatique',
       stat_focus: 'PHP/Laravel, Java, SQL, JS',
       stat_marathon: 'Sprints & Marathon Web',
       card_role: 'Développeur Full Stack',
       card_status: 'Ouvert aux opportunités',
+      code_comment: '// parcours.config.ts',
+      code_edu_1: '"BUT Informatique — IUT Lens"',
+      code_edu_2: '"Licence Info — Sorbonne Paris Nord"',
 
       journey_eyebrow: '01 · Mon Parcours',
       journey_title: 'Une progression de la théorie informatique au Full Stack',
       journey_subtitle: 'Chaque étape de mon parcours m\'a permis d\'associer rigueur algorithmique, pratique du génie logiciel et sens du travail en équipe.',
       badge_fullstack: 'Spécialisation Full Stack',
       tl_but_title: 'BUT Informatique — Parcours Développement d\'Application',
+      tl_but_org: 'Université d\'Artois · IUT de Lens',
       tl_but_desc: 'Approfondissement du développement web et logiciel orienté production : architecture MVC avec Laravel, modélisation et requêtage avancé PostgreSQL, programmation orientée objet en Java, et réalisation de projets en équipe dont le Marathon Web (48h).',
       badge_company: 'Immersion Entreprise',
       tl_wl_title: 'Stage de découverte — Métiers du numérique',
       tl_wl_desc: 'Observation concrète du cycle de vie d\'un produit logiciel à grande échelle (WorldLine Contact) et échanges avec les équipes de développement, UI/UX design et data science.',
       badge_fundamentals: 'Fondamentaux',
       tl_lic_title: 'Licence d\'Informatique',
+      tl_lic_org: 'Université Sorbonne Paris Nord · Villetaneuse',
       tl_lic_desc: 'Acquisition des bases solides de l\'informatique : algorithmique, structures de données, programmation impérative en C, logique mathématique et premiers développements web.',
       badge_soft: 'Expérience Humaine',
       tl_alsh_title: 'Animateur en ALSH',
+      tl_alsh_org: 'Mairie de Bully-les-Mines',
       tl_alsh_desc: 'Encadrement et animation d\'un groupe de 24 enfants (6-7 ans). Développement de compétences transverses essentielles en entreprise : communication claire, calme sous pression, organisation et esprit d\'équipe.',
       badge_bac: 'Socle Scientifique',
       tl_bac_title: 'Baccalauréat Général — Maths & Physique-Chimie',
+      tl_bac_org: 'Lycée · Pas-de-Calais',
       tl_bac_desc: 'Formation scientifique axée sur la rigueur analytique, la modélisation et la résolution structurée de problèmes.',
+
+      tag_java_oop: 'Java POO',
+      tag_mvc: 'Architecture MVC',
+      tag_lifecycle: 'Cycle de vie produit',
+      tag_dev: 'Développement',
+      tag_c: 'Langage C',
+      tag_algo: 'Algorithmique',
+      tag_ds: 'Structures de données',
+      tag_group: 'Gestion de groupe',
+      tag_oop: 'POO',
+      tag_3dmath: 'Maths 3D',
 
       skills_eyebrow: '02 · Stack Technique',
       skills_title: 'Des outils choisis pour construire de bout en bout',
       skills_subtitle: 'Filtrez par couche applicative pour explorer les technologies que j\'utilise dans mes projets.',
       filter_all: 'Toutes',
       filter_data: 'BDD & Outils',
+      sk_java_name: 'Java (POO)',
+      sk_c_name: 'Langage C',
+      sk_team_name: 'Méthode Agile & Équipe',
+      layer_tools: 'Outils',
+      layer_methods: 'Méthodes',
       sk_html: 'Intégration sémantique, mise en page Flexbox & Grid, design responsive et accessibilité.',
       sk_js: 'Manipulation du DOM, gestion d\'événements, requêtes asynchrones et interfaces dynamiques.',
       sk_blade: 'Conception de vues modulaires, composants réutilisables et rendu côté serveur avec Laravel.',
@@ -67,10 +107,15 @@
       projects_subtitle: 'Une sélection d\'applications web full stack et de logiciels réalisés durant mon parcours. Cliquez sur un projet pour explorer son architecture.',
       filter_all_projects: 'Tous',
       filter_software: 'Logiciel & Graphisme',
+      proj_pantheon_type: 'Full Stack · Marathon Web 48h',
       proj_pantheon_desc: 'Plateforme collaborative de lecture et de création d\'histoires interactives à choix multiples, conçue en équipe lors du Marathon Web de l\'IUT de Lens.',
+      proj_boardgames_type: 'Full Stack · CRUD & Catalogue',
       proj_boardgames_desc: 'Application web complète permettant de consulter, filtrer, noter et ajouter des jeux de société avec gestion des utilisateurs et base relationnelle.',
+      proj_rt_type: 'Logiciel · Synthèse d\'images',
       proj_rt_title: 'Moteur de Ray-Tracing',
       proj_rt_desc: 'Logiciel de génération d\'images 3D par lancer de rayons développé en Java : calcul d\'intersections, gestion des ombres, réflexions et modèles d\'éclairage.',
+      proj_jo_type: 'Web · Site Vitrine Dynamique',
+      proj_jo_title: 'Jeux Olympiques Paris 2024',
       proj_jo_desc: 'Site vitrine dynamique dédié aux Jeux Olympiques de Paris 2024 développé sous Laravel, mettant en avant les épreuves, sites et actualités.',
       view_details: 'Voir les détails →',
 
@@ -91,9 +136,13 @@
       contact_title: 'Échangeons sur vos projets ou opportunités',
       contact_subtitle: 'Disponible pour discuter d\'un poste, d\'une alternance, d\'un projet web ou simplement d\'architecture logicielle.',
       copy_btn: 'Copier',
+      open_link: 'Ouvrir ↗',
       form_name: 'Votre nom',
       form_subject: 'Sujet',
       form_message: 'Message',
+      ph_name: 'Camille Martin',
+      ph_subject: 'Opportunité Développeur Full Stack',
+      ph_message: 'Bonjour Batiste...',
       form_submit: 'Préparer l\'email →',
       footer_rights: 'Développeur Full Stack',
       footer_built: 'Conçu en HTML5, CSS3 & JavaScript · Hébergé sur GitHub Pages',
@@ -103,6 +152,22 @@
       form_sent: 'Ouverture de votre client mail avec le message pré-rempli.'
     },
     en: {
+      page_title: 'Batiste Dubo — Full Stack Developer | Background & Portfolio',
+      meta_description: 'Portfolio of Batiste Dubo, Full Stack Developer. Explore my background from a Computer Science Bachelor to a BUT in Application Development, my skills, and my web and software projects.',
+      og_title: 'Batiste Dubo — Full Stack Developer',
+      og_description: 'Background, technical skills, and featured projects by Batiste Dubo, Full Stack Developer.',
+      aria_home: 'Batiste Dubo Home',
+      aria_nav: 'Main navigation',
+      aria_lang: 'Switch language',
+      aria_profile_card: 'Developer profile card',
+      aria_filter_skills: 'Filter skills',
+      aria_filter_projects: 'Filter projects',
+      aria_close: 'Close',
+      theme_light_aria: 'Switch to light mode',
+      theme_dark_aria: 'Switch to dark mode',
+      menu_open_aria: 'Open menu',
+      menu_close_aria: 'Close menu',
+
       skip: 'Skip to main content',
       nav_journey: 'Journey',
       nav_skills: 'Skills',
@@ -114,36 +179,60 @@
       hero_lead: 'I\'m <strong>Batiste Dubo</strong>. Trained in computer science fundamentals and specialized in application development at IUT de Lens, I craft reliable, maintainable, and user-focused software.',
       hero_cta_journey: 'Explore my journey',
       hero_cta_projects: 'View my projects',
+      stat_years: '4+ years',
       stat_study: 'Computer science training',
       stat_focus: 'PHP/Laravel, Java, SQL, JS',
       stat_marathon: 'Sprints & Web Marathon',
       card_role: 'Full Stack Developer',
       card_status: 'Open to opportunities',
+      code_comment: '// profile.config.ts',
+      code_edu_1: '"BUT Computer Science — IUT Lens"',
+      code_edu_2: '"CS Bachelor — Sorbonne Paris Nord"',
 
       journey_eyebrow: '01 · My Journey',
       journey_title: 'From Computer Science Theory to Full Stack Engineering',
       journey_subtitle: 'Every step of my background combined algorithmic rigor, practical software engineering, and strong teamwork.',
       badge_fullstack: 'Full Stack Specialization',
       tl_but_title: 'BUT Computer Science — Application Development Track',
+      tl_but_org: 'University of Artois · IUT de Lens',
       tl_but_desc: 'Production-oriented web and software engineering: MVC architecture with Laravel, relational modeling and advanced PostgreSQL queries, object-oriented Java, and team sprints including the 48-hour Web Marathon.',
       badge_company: 'Industry Immersion',
       tl_wl_title: 'Discovery Internship — Tech & Digital Roles',
       tl_wl_desc: 'First-hand observation of the software lifecycle on a large-scale product (WorldLine Contact), shadowing software engineers, UI/UX designers, and data scientists.',
       badge_fundamentals: 'CS Fundamentals',
       tl_lic_title: 'Bachelor in Computer Science (Licence)',
+      tl_lic_org: 'Sorbonne Paris Nord University · Villetaneuse',
       tl_lic_desc: 'Built strong foundations in algorithms, data structures, imperative programming in C, mathematical logic, and core web technologies.',
       badge_soft: 'Human Experience',
       tl_alsh_title: 'Youth Activity Leader (ALSH)',
+      tl_alsh_org: 'City of Bully-les-Mines',
       tl_alsh_desc: 'Supervised and led a group of 24 children (ages 6–7). Developed essential workplace soft skills: clear communication, composure under pressure, planning, and teamwork.',
       badge_bac: 'Scientific Foundation',
       tl_bac_title: 'General Baccalaureate — Mathematics & Physics-Chemistry',
+      tl_bac_org: 'High School · Pas-de-Calais, France',
       tl_bac_desc: 'Scientific curriculum focused on analytical rigor, modeling, and structured problem-solving.',
+
+      tag_java_oop: 'Java OOP',
+      tag_mvc: 'MVC Architecture',
+      tag_lifecycle: 'Product Lifecycle',
+      tag_dev: 'Development',
+      tag_c: 'C Language',
+      tag_algo: 'Algorithms',
+      tag_ds: 'Data Structures',
+      tag_group: 'Group Management',
+      tag_oop: 'OOP',
+      tag_3dmath: '3D Math',
 
       skills_eyebrow: '02 · Tech Stack',
       skills_title: 'Tools chosen to build from end to end',
       skills_subtitle: 'Filter by application layer to explore the technologies I use across my projects.',
       filter_all: 'All',
       filter_data: 'DB & Tooling',
+      sk_java_name: 'Java (OOP)',
+      sk_c_name: 'C Language',
+      sk_team_name: 'Agile & Teamwork',
+      layer_tools: 'Tooling',
+      layer_methods: 'Methods',
       sk_html: 'Semantic markup, Flexbox & Grid layouts, responsive design, and web accessibility.',
       sk_js: 'DOM manipulation, event handling, asynchronous requests, and dynamic UI interactions.',
       sk_blade: 'Modular views, reusable components, and server-side rendering with Laravel.',
@@ -159,10 +248,15 @@
       projects_subtitle: 'A curated selection of full stack web apps and software built during my journey. Click any project to inspect its architecture.',
       filter_all_projects: 'All',
       filter_software: 'Software & Graphics',
+      proj_pantheon_type: 'Full Stack · 48h Web Marathon',
       proj_pantheon_desc: 'Collaborative platform for reading and writing branching interactive stories, built as a team during the IUT de Lens 48h Web Marathon.',
+      proj_boardgames_type: 'Full Stack · CRUD & Catalog',
       proj_boardgames_desc: 'Full-featured web application to browse, filter, rate, and publish board games with user accounts and a relational database.',
+      proj_rt_type: 'Software · 3D Graphics',
       proj_rt_title: 'Ray-Tracing Engine',
       proj_rt_desc: '3D image synthesis software built in Java using ray tracing: ray-object intersections, shadows, reflections, and lighting models.',
+      proj_jo_type: 'Web · Dynamic Showcase',
+      proj_jo_title: 'Paris 2024 Olympic Games',
       proj_jo_desc: 'Dynamic showcase website dedicated to the Paris 2024 Olympic Games built with Laravel, featuring events, venues, and news.',
       view_details: 'View details →',
 
@@ -183,9 +277,13 @@
       contact_title: 'Let\'s discuss your projects or opportunities',
       contact_subtitle: 'Available to talk about full stack roles, apprenticeships, web projects, or software architecture.',
       copy_btn: 'Copy',
+      open_link: 'Open ↗',
       form_name: 'Your name',
       form_subject: 'Subject',
       form_message: 'Message',
+      ph_name: 'Alex Morgan',
+      ph_subject: 'Full Stack Developer Opportunity',
+      ph_message: 'Hello Batiste...',
       form_submit: 'Prepare email →',
       footer_rights: 'Full Stack Developer',
       footer_built: 'Built with HTML5, CSS3 & JavaScript · Hosted on GitHub Pages',
@@ -199,7 +297,7 @@
   // Detailed project data for the modal
   const projectDetails = {
     pantheon: {
-      type: 'Full Stack · Marathon Web 48h',
+      type: { fr: 'Full Stack · Marathon Web 48h', en: 'Full Stack · 48h Web Marathon' },
       title: { fr: 'Le Panthéon', en: 'Le Panthéon' },
       tags: ['Laravel', 'PHP', 'PostgreSQL', 'Blade', 'Git'],
       context: {
@@ -213,7 +311,7 @@
       github: 'https://github.com/Batiste0912/IUT-MarathonWeb'
     },
     boardgames: {
-      type: 'Full Stack · CRUD & Catalogue',
+      type: { fr: 'Full Stack · CRUD & Catalogue', en: 'Full Stack · CRUD & Catalog' },
       title: { fr: 'BoardGames', en: 'BoardGames' },
       tags: ['Laravel', 'PHP', 'Eloquent ORM', 'SQL', 'CSS3'],
       context: {
@@ -229,7 +327,10 @@
     raytracing: {
       type: { fr: 'Logiciel · Synthèse d\'images', en: 'Software · 3D Graphics' },
       title: { fr: 'Moteur de Ray-Tracing', en: 'Ray-Tracing Engine' },
-      tags: ['Java', 'POO', 'Maths 3D', 'Vecteurs & Lumière'],
+      tags: {
+        fr: ['Java', 'POO', 'Maths 3D', 'Vecteurs & Lumière'],
+        en: ['Java', 'OOP', '3D Math', 'Vectors & Lighting']
+      },
       context: {
         fr: 'Développement d\'un moteur de rendu 3D par lancer de rayons (ray-tracing) en Java, capable de générer des scènes réalistes à partir de fichiers de description.',
         en: 'Built a 3D ray-tracing rendering engine in Java capable of generating realistic scenes from scene description files.'
@@ -278,8 +379,9 @@
     htmlEl.setAttribute('data-theme', theme);
     localStorage.setItem('portfolio_theme', theme);
     if (themeToggle) {
+      const dict = translations[currentLang];
       themeToggle.textContent = theme === 'dark' ? '☀' : '☾';
-      themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Passer en mode clair' : 'Passer en mode sombre');
+      themeToggle.setAttribute('aria-label', theme === 'dark' ? dict.theme_light_aria : dict.theme_dark_aria);
     }
   }
 
@@ -304,6 +406,14 @@
     }
 
     const dict = translations[lang];
+    document.title = dict.page_title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', dict.meta_description);
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', dict.og_title);
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', dict.og_description);
+
     document.querySelectorAll('[data-i18n]').forEach((el) => {
       const key = el.getAttribute('data-i18n');
       if (dict[key] !== undefined) {
@@ -314,6 +424,28 @@
         }
       }
     });
+
+    document.querySelectorAll('[data-i18n-aria]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-aria');
+      if (dict[key] !== undefined) {
+        el.setAttribute('aria-label', dict[key]);
+      }
+    });
+
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (dict[key] !== undefined) {
+        el.setAttribute('placeholder', dict[key]);
+      }
+    });
+
+    if (themeToggle) {
+      themeToggle.setAttribute('aria-label', currentTheme === 'dark' ? dict.theme_light_aria : dict.theme_dark_aria);
+    }
+    if (menuToggle && navLinks) {
+      const isOpen = navLinks.classList.contains('open');
+      menuToggle.setAttribute('aria-label', isOpen ? dict.menu_close_aria : dict.menu_open_aria);
+    }
   }
 
   applyLanguage(currentLang);
@@ -330,7 +462,9 @@
   if (menuToggle && navLinks) {
     menuToggle.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('open');
+      const dict = translations[currentLang];
       menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? dict.menu_close_aria : dict.menu_open_aria);
       menuToggle.textContent = isOpen ? '✕' : '☰';
     });
 
@@ -338,6 +472,7 @@
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
         menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', translations[currentLang].menu_open_aria);
         menuToggle.textContent = '☰';
       });
     });
@@ -401,7 +536,8 @@
     modalContext.textContent = data.context[currentLang];
     modalChallenges.textContent = data.challenges[currentLang];
 
-    modalTags.innerHTML = data.tags
+    const tags = Array.isArray(data.tags) ? data.tags : data.tags[currentLang];
+    modalTags.innerHTML = tags
       .map((tag) => `<span class="tag">${tag}</span>`)
       .join('');
 
